@@ -9,6 +9,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_park_page.*
 
 
@@ -31,7 +32,9 @@ class park_page : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setListener()
-
+        logout_button.setOnClickListener {
+            findNavController().navigate(R.id.action_park_page_to_login_page)
+        }
 //        mainArea.setOnClickListener {
 //            hideSoftKeyboard()
 //        }
@@ -111,7 +114,7 @@ class park_page : Fragment() {
                 checkSlot()
                 pickSlot = ""
             }else{
-                Toast.makeText(getActivity() , "Please fill all in put text. " , Toast.LENGTH_SHORT).show()
+                Toast.makeText(getActivity() , "Please fill all field. " , Toast.LENGTH_SHORT).show()
             }
         }else{
             Toast.makeText(getActivity() , "Please select parking slot." , Toast.LENGTH_SHORT).show()

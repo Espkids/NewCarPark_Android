@@ -7,24 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".login_page" >
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:orientation="horizontal"
-            android:visibility="visible">
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/loginText"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="45sp" />
+
+            <EditText
+                android:id="@+id/username_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/usernameHint"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/password_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:ems="10"
+                android:hint="@string/passHint"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/login_button"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Button" />
-        </LinearLayout>
+                android:layout_height="64dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/loginText"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
 
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

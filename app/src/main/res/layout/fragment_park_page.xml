@@ -101,7 +101,6 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginBottom="30dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -112,7 +111,8 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimaryDark"
                     android:text="@string/updateText"
-                    android:textColor="@color/colorAccent" />
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/delete_button"
@@ -121,8 +121,24 @@
                     android:layout_weight="1"
                     android:background="@color/colorRed"
                     android:text="@string/deleteText"
-                    android:textColor="@color/colorAccent" />
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
             </LinearLayout>
+
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:text="@string/logoutText"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>

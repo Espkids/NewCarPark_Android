@@ -10,4 +10,9 @@
     <string name="ownerName">Owner name</string>
     <string name="carNumber">Car number</string>
     <string name="carBrand">Car brand</string>
+    <string name="loginText">Login</string>
+    <string name="usernameHint">Username</string>
+    <string name="passwordHint" />
+    <string name="passHint">Password</string>
+    <string name="logoutText">Logout</string>
 </resources>
