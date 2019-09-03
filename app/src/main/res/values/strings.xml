@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">newCarpark</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appName">Car Park</string>
+    <string name="emptyText">Empty</string>
+    <string name="updateText">Update</string>
+    <string name="deleteText">Delete</string>
+    <string name="ownerName">Owner name</string>
+    <string name="carNumber">Car number</string>
+    <string name="carBrand">Car brand</string>
+</resources>
